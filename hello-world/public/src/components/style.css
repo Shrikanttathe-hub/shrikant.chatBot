@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing : border-box;
+
+}
+
+.navbar{
+    background-colour : black;
+    text-align: center;
+    color:white;
+}
+
+.navbar a{
+    background-colour : black;
+    text-align: center;
+    color: antiquewhite;
+}
+.navbar a{
+    text-decoration: none;
+    color: tomato;
+    margin-right: 5px;
+}
