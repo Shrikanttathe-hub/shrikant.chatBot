@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-// import "./App.css";
-import "./Styles/SignIn.css";
-import "./Styles/Profile.css";
+import "./App.css";
 import Profile from "./Components/Profile";
-import SignIn from "./Components/SignIn";
+import SignIn from "./Components/Signin";
 
 function App() {
   const [userDetails, setUserDetails] = useState({});
