@@ -33,7 +33,9 @@ function App() {
   };
 
   return (
+    <form className=''>
     <div className="App">
+     
       <p className='p1'>Welcome back!👋</p>
       <h1>Sign in to your account</h1>
       <div>
@@ -47,11 +49,12 @@ function App() {
       <button onClick={handleLogin}>Continue</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <p className='p2'>Forget your password?</p>
-      <section>
-      <p className='p3'>Don't have an account?<a href='#'>Sign up</a></p>
-    </section>
-    </div>
    
+    </div>
+     <footer className='footer-1'>
+       <p className='p3'>Don't have an account? <a href='#'>Sign up</a></p>
+     </footer>
+     </form>
   );
 }
 
