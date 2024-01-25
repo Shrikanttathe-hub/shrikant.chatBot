@@ -1,28 +1,40 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import axios from "axios";
 
-const ImageSearch = () => {
+// console.log("ImageSearch.js",process.env.REACT_APP_UNPLASH_ACCESS_KEY);
 
-    const [searchQuery, setSearchQuery] = useState('');
-    
+const ImageSearch = ({setImageList}) => {
+const [searchQuery, setSearchQuery] = useState('');
+// const [imageList, setImageList] = useState([]); 
+
+useEffect(()=>{
+    handleSearch()
+},[])
+
 
   function handleSearch(e){
-     e.preventDefault();
+    // if(e){
+    //  e.preventDefault();
+    // }
     //  console.log(searchQuery);
+     e && e.preventDefault();
 
      axios.get("https://api.unsplash.com/search/photos" , 
      
      {
         headers:{
             "Accept-Version" : "v1",
-            Authorization : "Client-ID GudRH32rZHu6rrNDuj4aWGmZgTTjxUUYLvN2Txc6gZQ"
+            Authorization : `Client-ID ${process.env.REACT_APP_UNPLASH_ACCESS_KEY}` 
         },
+        //     GudRH32rZHu6rrNDuj4aWGmZgTTjxUUYLvN2Txc6gZQ"
+        // },
         params: {
-            query: searchQuery
+            query: searchQuery || "random"
         }
      })
      .then((response)=> {
         console.log(response.data);
+        setImageList(response.data.results);
      })
      .catch((error) => {
         console.log(error);
