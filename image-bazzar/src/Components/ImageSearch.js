@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios";
+import "../Components/ImageSearch.css";
 
 // console.log("ImageSearch.js",process.env.REACT_APP_UNPLASH_ACCESS_KEY);
 

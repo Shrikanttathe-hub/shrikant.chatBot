@@ -23,7 +23,7 @@ const Profile = ({userDetails,setUserDetails}) => {
       <div className="design">
         <div className="triangle-design"></div>
       </div>
-      <h1>Signup Successful!</h1>
+      <h1 id="header">Signup Successful!</h1>
       <div className="form">
         <h1>Profile</h1>
         <img src={ProfileSVG} alt="Profile Image" />

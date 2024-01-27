@@ -5,6 +5,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+     
   }
   
   code {
@@ -76,7 +77,7 @@ body {
     font-weight:700;
     font-size: 12px;
     color: #625BF7;
-   margin-top: 20px;
+   margin-top: 0px;
   }
   .p3{
     font-family: Mulish;

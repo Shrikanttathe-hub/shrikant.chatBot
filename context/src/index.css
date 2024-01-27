@@ -5,10 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   /* background-image: 'url("https://unsplash.com/photos/a-blue-flower-with-a-red-center-on-a-yellow-background-MdofdZjgh3k")'; */
-   background-color: darkgray;
-   border: 5px solid lightgrey;
-}  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
